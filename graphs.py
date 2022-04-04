@@ -1,6 +1,9 @@
 # implementation of graphs with Adjacency Matrix, Adjacency List, and OOP
 
 
+from tkinter import N
+
+
 class Graphs():
     def __init__(self):
         pass
@@ -27,7 +30,8 @@ class Graphs():
                     else:
                         print("incorrect input, try again")
                 counter2 += 1
-            graph.append(nodeList)
+            data = int(input("what's the data in node " + str(node) + "?"))
+            graph.append([data, nodeList])
         return graph
 
 graphs = Graphs
